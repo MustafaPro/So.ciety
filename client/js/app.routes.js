@@ -1,5 +1,5 @@
-Society.config(["$stateProvider", "modalStateProvider", "$urlRouterProvider", "$locationProvider",
-    function($stateProvider, modalStateProvider, $urlRouterProvider, $locationProvider) {
+Society.config(["$stateProvider", "$urlRouterProvider", "$locationProvider",
+    function($stateProvider, $urlRouterProvider, $locationProvider) {
  
         $stateProvider
         .state('society', {
@@ -75,7 +75,7 @@ Society.config(["$stateProvider", "modalStateProvider", "$urlRouterProvider", "$
                 }
             }
         });
- 
+/* 
         modalStateProvider
         .state('society.message', {
             controller: 'MessageCtrl',
@@ -95,7 +95,7 @@ Society.config(["$stateProvider", "modalStateProvider", "$urlRouterProvider", "$
             templateUrl: 'message.html',
             windowClass: 'photo-modal'
         });
- 
+ */
         $urlRouterProvider.otherwise('/');
     }
 ])
