@@ -1,6 +1,6 @@
 var express = require('express')
-  , Api = require('../../Core/Helpers/Api').Api
-  , Security = require('../../Core/Helpers/Security').Security
+  , Api = require('../../core/helpers/api').Api
+  , Security = require('../../core/helpers/security').Security
   , User = express.Router();
 
 User.get('/', function(req, res) {
