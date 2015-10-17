@@ -1,13 +1,30 @@
 'use strict';
 
-var crypto = require('crypto');
+var rp = require('request-promise');
 
 var Api = function() {
-  this._apiBaseUrl = 'https://so.ciety.com/api/v1';
-  options = options || function(){};
+  this._apiBaseUrl = 'https://ciety.com/api';
+  var options = options || function(){};
 };
 
-Api.prototype.request = function(options, data) {
-  return new Promise(function(resolve, fail) {
+Api.prototype.request = function(options, callback) {
+  var self = this;
+
+  var request = {
+    method: options.method,
+    uri: this._apiBaseUrl + options.endpoint,
+    body: options.body,
+    json: true
+  };
+
+  return rp(request).then(function (response) {
+    console.info(response);
+    callback(response);
+  })
+  .catch(function (error) {
+    // API call failed... 
+    callback(null, error);
   });
 };
+
+exports.Api = Api;

@@ -14,3 +14,5 @@ Security.prototype.encryptText = function(input, password) {
 
 Security.prototype.decryptText = function(input, password) {
 };
+
+exports.Security = Security;

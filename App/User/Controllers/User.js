@@ -1,14 +1,20 @@
 var express = require('express')
-  , Api = require('../../Core/Helpers/Api')
-  , Security = require('../../Core/Helpers/Security')
+  , Api = require('../../Core/Helpers/Api').Api
+  , Security = require('../../Core/Helpers/Security').Security
   , User = express.Router();
 
 User.get('/', function(req, res) {
-  res.json({name: 'Sam Granger'});
+  var api = new Api();
+  var me = api.request({ endpoint: '/users/me', method: 'get', body: req.params }, function(response, error) {
+    if(error) {
+      res.status(error.statusCode).json(error);
+    } else {
+      res.json(response);
+    }
+  });
 });
 
 User.post('/authenticate', function(req, res) {
-  var authenticate = Api.request({ endpoint: '/user/authenticate', method: 'post', bearer: false}, { username: req.params.username, password: req.params.password});
 });
 
 module.exports = User;
