@@ -19,11 +19,11 @@ app.on('ready', function() {
   /*
    * Let's fire up the Api
    */
-  api.use(require('./app/api.js'));
+  api.use(require('./api'));
   api.listen(51337);
 
   main = new BrowserWindow({width: 800, height: 600 });
-  main.loadUrl('file://' + __dirname + '/app/client.html');
+  main.loadUrl('file://' + __dirname + '/client/index.html');
 
   main.openDevTools();
 
