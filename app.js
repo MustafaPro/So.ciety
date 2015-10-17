@@ -1,7 +1,5 @@
-/*
- * So.ciety
- * 
- */
+'use strict';
+
 var app = require('app');
 var http = require('http');
 var BrowserWindow = require('browser-window');
