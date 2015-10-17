@@ -3,7 +3,7 @@
 var crypto = require('crypto');
 
 var Api = function() {
-  this._apiBaseUrl = 'https://society.com/api/v1';
+  this._apiBaseUrl = 'https://so.ciety.com/api/v1';
   options = options || function(){};
 };
 
