@@ -1,0 +1,8 @@
+[ui-view="header"] {
+  height: 60px;
+  line-height: 60px;
+}
+
+[ui-view="header"] .logo {
+  text-transform: uppercase;
+}

@@ -1,0 +1,39 @@
+[ui-view="main"] {
+  height: 100%;
+}
+
+[ui-view="main"] .post {
+  box-shadow: 0 0 5px 0 rgba(175,175,175,0.1);
+  height: 100%;
+  margin: 90px 0;
+}
+
+[ui-view="main"] .post small {
+  display: block;
+  color: #afafaf;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+[ui-view="main"] .post .cover {
+  height: 40%;
+  position: relative;
+  background-position: top right;
+  border-radius: 3px 3px 0 0;
+}
+
+[ui-view="main"] .post .cover h5 {
+  position: absolute;
+  color: #fff;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+[ui-view="main"] .post .content {
+  background: #fff;
+  height: 60%;
+  padding: 25px 25px 75px;
+}

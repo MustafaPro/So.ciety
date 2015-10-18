@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'San Francisco';
+  src: url('../fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/SFUIDisplay-Regular.otf')  format('opentype'),
+             url('../fonts/SFUIDisplay-Regular.woff') format('woff'), url('../fonts/SFUIDisplay-Regular.ttf')  format('truetype'), url('../fonts/SFUIDisplay-Regular.svg#San Fransisco') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*@font-face {
+  font-family: 'San Francisco';
+  src: url('../fonts/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/SFUIDisplay-Medium.otf')  format('opentype'),
+  url('../fonts/SFUIDisplay-Medium.woff') format('woff'), url('../fonts/SFUIDisplay-Medium.ttf')  format('truetype'), url('../fonts/SFUIDisplay-Medium.svg#San Francisco') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}*/
